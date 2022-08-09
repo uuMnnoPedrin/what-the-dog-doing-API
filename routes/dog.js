@@ -15,15 +15,13 @@ router.get('/', (request, response, next)=>{11
 router.post('/', (request, response, next)=>{
     console.log(typeof(request.body))
     DogController.addData(request.body);
+    const DogDoingData = DogController.getData();
+    response.render('doglist', DogDoingData)
 });
 
 router.get('/dogdoing', (request, response, next)=>{
     const DogDoingRandom = DogController.getRandom();
     response.render('dogdoing', DogDoingRandom)
-});
-
-router.get('/urls', (request, response, next)=>{
-    response.render('urls')
 });
 
 router.get('/add', (request, response, next)=>{

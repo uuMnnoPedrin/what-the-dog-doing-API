@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "2790cf45-86e1-451d-a6d6-eb702619214e",
+    "name": "What The Dog Doing API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Random Dog",
+      "id": "67c8ade7-9f59-4a6c-a5fa-3373e7246a00",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:3000/v1/dog/dogdoing/"
+      },
+      "response": []
+    },
+    {
+      "name": "List Dogs",
+      "id": "e6cc92d9-887b-421b-9d0c-1993dbabb2fe",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:3000/v1/dog/"
+      },
+      "response": []
+    },
+    {
+      "name": "New Action to Dog",
+      "id": "e3860c50-c21d-475c-b30a-6a12a7153022",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"dogdoing\": \"newaction\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost:3000/v1/dog/"
+      },
+      "response": []
+    },
+    {
+      "name": "Random Cat - What The Cat Doing",
+      "id": "0dc42104-9f63-45ef-87a8-c67ee073503b",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://api.thecatapi.com/v1/images/search"
+      },
+      "response": []
+    }
+  ]
+}
